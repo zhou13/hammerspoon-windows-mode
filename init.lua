@@ -128,13 +128,16 @@ end
 
 local function eventHandler(event)
   local activeWindow = hs.window.focusedWindow()
-  local activeApp = activeWindow:application()
-  local bundleID = activeApp:bundleID()
-  if SKIPPED_BUNDLE_IDS[bundleID] ~= nil then
-    return false
+  local bundleID
+  if activeWindow ~= nil then
+    local activeApp = activeWindow:application()
+    bundleID = activeApp:bundleID()
+    if SKIPPED_BUNDLE_IDS[bundleID] ~= nil then
+      return false
+    end
   end
 
-  print(bundleID)
+  print("bundleID: " .. bundleID)
   local hotkey = toHotkey(event)
   local mapped_hotkey = KEY_MAPS[hotkey]
   if mapped_hotkey ~= nil then
