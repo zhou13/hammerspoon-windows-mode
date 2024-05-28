@@ -60,7 +60,7 @@ KEY_MAPS = {
   ["end"] = "cmd+right",
   ["shift+end"] = "cmd+shift+right",
   ["ctrl+delete"] = "option+delete", -- delete is backspace in OSX
-  ["ctrl+forwarddelete"] = "option+forwarddelete",  -- forwarddelete is delete in OSX
+  ["ctrl+forwarddelete"] = "option+forwarddelete", -- forwarddelete is delete in OSX
   ["ctrl+left"] = "option+left",
   ["ctrl+shift+left"] = "option+shift+left",
   ["ctrl+right"] = "option+right",
@@ -110,7 +110,7 @@ local function toHotkey(event)
   if flags.cmd then
     hotkey = hotkey .. "cmd+"
   end
-  if flags.cmd then
+  if flags.alt then
     hotkey = hotkey .. "option+"
   end
   if flags.shift then
@@ -153,12 +153,12 @@ local function eventHandler(event)
   return false
 end
 
-eventtap
-  .new({
-    eventTypes.flagsChanged,
-    eventTypes.keyDown,
-    eventTypes.keyUp,
-  }, eventHandler)
-  :start()
+-- WARNING: DO NOT make it a local variable, or hammerspoon will freezes randomly
+KeyWatcher = eventtap.new({
+  eventTypes.flagsChanged,
+  eventTypes.keyDown,
+  eventTypes.keyUp,
+}, eventHandler)
+KeyWatcher:start()
 
 -- vim: set sw=2:
