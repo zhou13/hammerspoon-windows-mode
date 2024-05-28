@@ -158,4 +158,4 @@ eventtap
   }, eventHandler)
   :start()
 
--- vim: set sw=2
+-- vim: set sw=2:
