@@ -7,7 +7,7 @@ Karabiner-Elements operates on a lower level and does NOT support tools like [Ba
 I need Barrier to switch between my Linux workstation and my MacOS computer.  In addition, I found
 that the lua configuration framework used by hammerspoon is easier to use compared to Karabiner-Elements.
 
-`hammerspoon-windows-mode` is meant to be more minimistic, so it only implements relavent part of the
+`hammerspoon-windows-mode` is meant to be minimistic, so it only implements relavent part of the
 keymaps defined in [karabiner-windows-mode](https://github.com/rux616/karabiner-windows-mode) that I
 found most useful. However, the configuration framework is already there, and it should be easy to
 fork the project and configure it to your needs. If you think there is something important missing,

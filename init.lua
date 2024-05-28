@@ -86,7 +86,7 @@ local function setHotkey(hotkey, event)
       if key == "ctrl" then
         flags.ctrl = true
       elseif key == "option" then
-        flags.option = true
+        flags.alt = true
       elseif key == "cmd" then
         flags.cmd = true
       elseif key == "shift" then
@@ -109,6 +109,9 @@ local function toHotkey(event)
   end
   if flags.cmd then
     hotkey = hotkey .. "cmd+"
+  end
+  if flags.cmd then
+    hotkey = hotkey .. "option+"
   end
   if flags.shift then
     hotkey = hotkey .. "shift+"
