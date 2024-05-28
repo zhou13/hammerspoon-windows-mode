@@ -128,7 +128,7 @@ end
 
 local function eventHandler(event)
   local activeWindow = hs.window.focusedWindow()
-  local bundleID
+  local bundleID = ""
   if activeWindow ~= nil then
     local activeApp = activeWindow:application()
     bundleID = activeApp:bundleID()
