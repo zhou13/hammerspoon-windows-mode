@@ -29,7 +29,7 @@ SCENE_BUNDLE_IDS = {
     ["com.vivaldi.Vivaldi"] = true,
     ["org.mozilla.firefox"] = true,
     ["org.mozilla.nightly"] = true,
-    ["com.apple.Safari$"] = true,
+    ["com.apple.Safari"] = true,
   },
 }
 
