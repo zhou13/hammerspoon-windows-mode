@@ -2,10 +2,9 @@
 
 With this project, you are able to replace system-wide hotkeys such as `cmd+c`, `cmd+v` with their
 Windows/Linux equivalents, e.g., `ctrl+c`, `ctrl+v`. This project is heavily inpsired by
-[karabiner-windows-mode](https://github.com/rux616/karabiner-windows-mode).  However,
-Karabiner-Elements operates on a lower level and does NOT support tools like [Barrier](https://github.com/debauchee/barrier) and [input-leap](https://github.com/input-leap/input-leap).
-I need Barrier to switch between my Linux workstation and my MacOS computer.  In addition, I found
-that the lua configuration framework used by hammerspoon is easier to use compared to Karabiner-Elements.
+[karabiner-windows-mode](https://github.com/rux616/karabiner-windows-mode).  The benefit of hammerspoon over Karabiner-Elements is
+* Karabiner-Elements operates does NOT support tools like [Barrier](https://github.com/debauchee/barrier) and [input-leap](https://github.com/input-leap/input-leap).
+* Lua configuration used by hammerspoon is easier to tweak compared to the json format used by Karabiner-Elements
 
 `hammerspoon-windows-mode` is meant to be minimistic, so it only implements relavent part of the
 keymaps defined in [karabiner-windows-mode](https://github.com/rux616/karabiner-windows-mode) that I
