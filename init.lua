@@ -131,7 +131,7 @@ local function eventHandler(event)
   local bundleID = ""
   if activeWindow ~= nil then
     local activeApp = activeWindow:application()
-    bundleID = activeApp:bundleID()
+    bundleID = activeApp:bundleID() or ""
     if SKIPPED_BUNDLE_IDS[bundleID] ~= nil then
       return false
     end
