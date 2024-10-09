@@ -23,7 +23,7 @@ Next, clone this repository as the following:
 ```bash
 cd ~
 mv .hammerspoon .hammerspoon.backup
-git clone https://github.com/rux616/hammerspoon-windows-mode.git .hammerspoon
+git clone git@github.com:zhou13/hammerspoon-windows-mode.git .hammerspoon
 ```
 
 Finally, click "Reload Config" in the `hammerspoon` tray icon. If you have not launched `hammerspoon`, you can simply start the application. It should work!
