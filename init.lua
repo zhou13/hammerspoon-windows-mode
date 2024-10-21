@@ -20,6 +20,7 @@ SKIPPED_BUNDLE_IDS = {
   ["com.googlecode.iterm2"] = true,
   ["com.apple.Terminal"] = true,
   ["com.github.wez.wezterm"] = true,
+  ["com.mitchellh.ghostty"] = true,
 }
 
 SCENE_BUNDLE_IDS = {
